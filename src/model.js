@@ -5,10 +5,18 @@ import {
   TextColumnsBlock,
 } from "./classes/blocks";
 
+import { css } from "./utils";
+
 export const model = [
   new TitleBlock("Test Title", {
     tag: "h2",
-    styles: "background: darkred; color: #fff; text-align: center",
+    styles: css({
+      background: "darkred",
+      color: "#fff",
+      padding: "1.5rem",
+      "text-align": "center",
+    }),
+    // styles: "background: darkred; color: #fff; text-align: center",
   }),
   new TextBlock(
     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia",
